@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "AxyPly — YouTube Auto Continue",
+  "version": "1.0.0",
+  "description": "Automatically continues YouTube playback when the Continue watching dialog appears.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}
