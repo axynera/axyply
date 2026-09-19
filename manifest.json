@@ -4,15 +4,6 @@
   "version": "2.0.0",
   "description": "Lightweight YouTube auto-continue extension with popup controls, counter, toast notifications and robust dialog detection.",
   "permissions": ["storage"],
-  "action": {
-    "default_title": "AxyPly",
-    "default_popup": "popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  "action": {"default_title":"AxyPly","default_popup":"popup.html"},
+  "content_scripts": [{"matches":["https://www.youtube.com/*"],"js":["content.js"],"run_at":"document_idle"}]
 }
